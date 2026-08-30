@@ -1,0 +1,100 @@
+// Prisma schema - Servicio de Citas (Proyecto Integrador SOA Salud)
+// Nota DDD: este schema representa el modelo de PERSISTENCIA (capa de infraestructura).
+// Las entidades de dominio puras (con su lógica de negocio) viven aparte en
+// src/domain/entities, y se mapean hacia/desde este modelo en los repositorios
+// de infraestructura (src/infrastructure/repositories). Esto evita acoplar el
+// dominio a Prisma directamente, tal como pide el principio de DDD.
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum EstadoCita {
+  pendiente
+  confirmada
+  cancelada
+  atendida
+}
+
+enum CanalNotificacion {
+  sms
+  email
+  whatsapp
+}
+
+enum EstadoNotificacion {
+  pendiente
+  enviada
+  fallida
+}
+
+model Paciente {
+  id             String            @id @default(uuid())
+  nombre         String
+  documento      String            @unique
+  telefono       String
+  email          String            @unique
+  canalPreferido CanalNotificacion @default(email)
+  creadoEn       DateTime          @default(now())
+  actualizadoEn  DateTime          @updatedAt
+
+  citas Cita[]
+
+  @@map("pacientes")
+}
+
+model Medico {
+  id           String   @id @default(uuid())
+  nombre       String
+  especialidad String
+  creadoEn     DateTime @default(now())
+
+  citas Cita[]
+
+  @@map("medicos")
+}
+
+model Cita {
+  id            String     @id @default(uuid())
+  pacienteId    String
+  medicoId      String
+  fechaHora     DateTime
+  estado        EstadoCita @default(pendiente)
+  motivo        String?
+  creadaEn      DateTime   @default(now())
+  actualizadaEn DateTime   @updatedAt
+
+  paciente Paciente @relation(fields: [pacienteId], references: [id])
+  medico   Medico   @relation(fields: [medicoId], references: [id])
+
+  notificaciones Notificacion[]
+
+  // Evita doble reserva del mismo médico en el mismo horario exacto
+  // (soporta directamente el criterio de aceptación de HU-02)
+  @@unique([medicoId, fechaHora])
+  @@index([pacienteId])
+  @@index([estado])
+  @@map("citas")
+}
+
+model Notificacion {
+  id        String             @id @default(uuid())
+  citaId    String
+  canal     CanalNotificacion
+  estado    EstadoNotificacion @default(pendiente)
+  intentos  Int                @default(0)
+  creadaEn  DateTime           @default(now())
+  enviadaEn DateTime?
+
+  cita Cita @relation(fields: [citaId], references: [id])
+
+  // soporta HU-04 (reintentos) y el diseño para el fallo (RNF de disponibilidad)
+  @@index([citaId])
+  @@index([estado])
+  @@map("notificaciones")
+}

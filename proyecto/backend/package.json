@@ -1,0 +1,29 @@
+{
+  "name": "backend-citas",
+  "version": "1.0.0",
+  "description": "Servicio de Citas - Proyecto Integrador SOA Salud",
+  "main": "dist/server.js",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate deploy",
+    "prisma:studio": "prisma studio",
+
+    "docker:dev": "prisma generate && tsx watch src/server.ts"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.19.3",
+    "fastify": "^5.12.1",
+    "zod": "^4.5.4"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.0",
+    "prisma": "^6.19.3",
+    "tsx": "^4.23.12",
+    "typescript": "^7.0.2"
+  },
+  "packageManager": "pnpm@9.11.0"
+}

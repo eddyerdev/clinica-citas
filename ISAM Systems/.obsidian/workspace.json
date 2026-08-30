@@ -1,0 +1,257 @@
+{
+  "main": {
+    "id": "2532015181577a4c",
+    "type": "split",
+    "children": [
+      {
+        "id": "fef8a262dd4a0a31",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e165667be3b8de35",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Entregable 1 Fundamentación y Requerimientos.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Entregable 1 Fundamentación y Requerimientos"
+            }
+          },
+          {
+            "id": "175c288e481ee41f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Entregable 2 Modelado y Diseño de la Solución.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Entregable 2 Modelado y Diseño de la Solución"
+            }
+          },
+          {
+            "id": "ebda688c4c70ca90",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Entregable 4 Sustentación Visual.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Entregable 4 Sustentación Visual"
+            }
+          },
+          {
+            "id": "0e90c15c3c66f86a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Entregable 3 Prototipado y Plan de Pruebas.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Entregable 3 Prototipado y Plan de Pruebas"
+            }
+          },
+          {
+            "id": "63edc567b17565e6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Entregable 3 Prototipado y Plan de Pruebas.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Entregable 3 Prototipado y Plan de Pruebas"
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "eec237e3bd3dd2c7",
+    "type": "split",
+    "children": [
+      {
+        "id": "3791b53d7e48316a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "cc6b3f416d1bdbc1",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Explorador de archivos"
+            }
+          },
+          {
+            "id": "130ec061ba7dfbb1",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Buscar"
+            }
+          },
+          {
+            "id": "aba7ebb87b1c5e0b",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-bookmark",
+              "title": "Marcadores"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "3365200496c7823d",
+    "type": "split",
+    "children": [
+      {
+        "id": "2977ec13f818fcfe",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8b154e0e14c5dea9",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Entregable 3 Prototipado y Plan de Pruebas.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Enlaces entrantes"
+            }
+          },
+          {
+            "id": "bec19317177f1823",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Entregable 3 Prototipado y Plan de Pruebas.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Enlaces salientes"
+            }
+          },
+          {
+            "id": "8134393f797853be",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Etiquetas"
+            }
+          },
+          {
+            "id": "5d22a725651a5c53",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "Todas las propiedades"
+            }
+          },
+          {
+            "id": "97e0a61c5ae0fe2b",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Entregable 3 Prototipado y Plan de Pruebas.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Esquema"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Abrir selector rápido": false,
+      "graph:Abrir vista gráfica": false,
+      "canvas:Crear nuevo lienzo": false,
+      "daily-notes:Abrir la nota de hoy": false,
+      "templates:Insertar plantilla": false,
+      "command-palette:Abrir paleta de comandos": false,
+      "bases:Crear nueva base": false
+    }
+  },
+  "active": "63edc567b17565e6",
+  "lastOpenFiles": [
+    "Entregable 1 Fundamentación y Requerimientos.md",
+    "Entregable 2 Modelado y Diseño de la Solución.md",
+    "Entregable 3 Prototipado y Plan de Pruebas.md",
+    "Plan de Puebas.md",
+    "Entregable 4 Sustentación Visual.md",
+    "Bienvenido.md"
+  ]
+}
